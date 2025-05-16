@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+             
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="txtScreen" Grid.ColumnSpan="4" Text="0" FontSize="62" HorizontalTextAlignment="End" HorizontalOptions="Fill"/>
+
+        <Button x:Name="BtnSuma" Text="+" FontSize="36" Grid.Column="0" Grid.Row="1" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnSuma_Clicked"></Button>
+        <Button x:Name="BtnSiete" Text="7" FontSize="36" Grid.Column="0" Grid.Row="2" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnSiete_Clicked"></Button>
+        <Button x:Name="BtnCuatro" Text="4" FontSize="36" Grid.Column="0" Grid.Row="3" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnCuatro_Clicked"></Button>
+        <Button x:Name="BtnUno" Text="1" FontSize="36" Grid.Column="0" Grid.Row="4" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnUno_Clicked"></Button>
+        <Button x:Name="BtnCero" Text="0" FontSize="36" Grid.Column="0" Background="Gray" BorderColor="White" BorderWidth="1" Grid.ColumnSpan="2" Grid.Row="5" CornerRadius="0" Clicked="BtnCero_Clicked"></Button>
+
+        <Button x:Name="BtnResta" Text="-" FontSize="36" Grid.Column="1" Grid.Row="1" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnResta_Clicked"></Button>
+        <Button x:Name="BtnOcho" Text="8" FontSize="36" Grid.Column="1" Grid.Row="2" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnOcho_Clicked"></Button>
+        <Button x:Name="BtnCinco" Text="5" FontSize="36" Grid.Column="1" Grid.Row="3" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnCinco_Clicked"></Button>
+        <Button x:Name="BtnDos" Text="2" FontSize="36" Grid.Column="1" Grid.Row="4" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnDos_Clicked"></Button>
+
+        <Button x:Name="BtnMultiplicacion" Text="*" FontSize="36" Grid.Column="2" Grid.Row="1" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnMultiplicacion_Clicked"></Button>
+        <Button x:Name="BtnNueve" Text="9" FontSize="36" Grid.Column="2" Grid.Row="2" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnNueve_Clicked"></Button>
+        <Button x:Name="BtnSeis" Text="6" FontSize="36" Grid.Column="2" Grid.Row="3" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnSeis_Clicked"></Button>
+        <Button x:Name="BtnTres" Text="3" FontSize="36" Grid.Column="2" Grid.Row="4" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnTres_Clicked"></Button>
+        <Button x:Name="BtnPunto" Text="," FontSize="36" Grid.Column="2" Grid.Row="5" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnPunto_Clicked"></Button>
+
+        <Button x:Name="BtnDivison" Text="/" FontSize="36" Grid.Column="3" Grid.Row="1" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnDivison_Clicked"></Button>
+        <Button x:Name="BtnDEL" Text="DEL" FontSize="36" Grid.Column="3" Grid.Row="2" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="BtnDEL_Clicked"></Button>
+        <Button x:Name="BtnCE" Text="CE" FontSize="36" Grid.Column="3" Grid.Row="3" Background="Gray" BorderColor="White" BorderWidth="1" CornerRadius="0" Clicked="ButtonCE_Clicked"></Button>
+        <Button x:Name="BtnIgual" Text="=" FontSize="36" Grid.Column="3" Grid.Row="4" Background="Gray" BorderColor="White" BorderWidth="1"  Grid.RowSpan="2" Clicked="BtnIgual_Clicked"></Button>
+
+    </Grid>
+</ContentPage>
